@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Musters Lodge No. 7095 is a Masonic Lodge in the Province of Nottinghamshire, warranted by The United Grand Lodge of England on 6 th June 1951, sponsored by the Duchess of Portland Lodge No. 3570 and consecrated on 24 th September 1951.">
+  <meta name="description" content="Musters Lodge No. 7095 is a friendly Masonic Lodge that meets at West Bridgford in the Province of Nottinghamshire, warranted by The United Grand Lodge of England in 1951, sponsored by the Duchess of Portland Lodge No. 3570.">
   <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
@@ -25,7 +25,6 @@
 
 <body>
 
-
   <header class="blog-header py-3">
     <div class="container">
       <div class="row flex-nowrap justify-content-between align-items-center">
@@ -36,6 +35,7 @@
     </div>
   </header>
 
+  
   <main role="main">
     <div class="bg-brand-light mb-3 pb-3">
       <div class="container">
@@ -191,10 +191,10 @@
         <div class="col-md-6 px-0">
           <h2 class="display-4 fst-italic">Are you interested in joining?</h2>
           <p class="lead my-3">
-            For further information and an informal chat contact:<br>
-            John M. Jones <small>(Secretary and Membership Officer)</small>
+            For further information and an informal chat, get in touch:
           </p>
-          <p class="lead mb-0"><span class="js-emailContainer" data-classes="font-weight-bold"></span></p>
+          <p class="lead mb-0"><span class="js-emailContainer" data-classes="fw-bold"></span></p>
+          <p class="lead mb-0"><span class="js-phoneContainer" data-classes="fw-bold"></span></p>
         </div>
         <div class="d-none d-md-flex col-md-6 col-lg-3 px-0">
           <img src="./images/lodge-banner-transparent.png" alt="The banner of Musters Lodge, No. 7095" class="img-fluid">
@@ -211,12 +211,20 @@
 
   <script language="javascript">
     window.addEventListener('load', () => {
-      var user = 'johnmjones47';
-      var domain = 'btinternet.com';
+      var user = 'hello';
+      var domain = 'musterslodge.org';
       var emailContainers = document.querySelectorAll('.js-emailContainer');
       emailContainers.forEach(function (container) {
         var cssClasses = container.getAttribute('data-classes');
         container.innerHTML = '<a href=\"mailto:' + user + '@' + domain + '" class="' + cssClasses + '">' + user + '@' + domain + '</a>';
+      });
+      var phonePiece1 = '07434';
+      var phonePiece2 = '398';
+      var phonePiece3 = '864';
+      var phoneContainers = document.querySelectorAll('.js-phoneContainer');
+      phoneContainers.forEach(function (container) {
+        var cssClasses = container.getAttribute('data-classes');
+        container.innerHTML = '<a href=\"tel:' + phonePiece1 + phonePiece2 + phonePiece3 + '" class="' + cssClasses + '">' + phonePiece1 + '&nbsp;' + phonePiece2 + '&nbsp;' + phonePiece3 + '</a>';
       });
     });
   </script>
